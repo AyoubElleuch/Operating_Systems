@@ -1,0 +1,4 @@
+    1  cowsay "Hello, I am just a cow"
+    2  cmatrix
+    3  asciiquarium
+    4  history > ex2.txt
