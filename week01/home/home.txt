@@ -1,0 +1,24 @@
+total 88
+drwxr-xr-x  3 root  root  4096 сен  6 18:55 ..
+-rw-r--r--  1 ayoub ayoub  807 сен  6 18:55 .profile
+-rw-r--r--  1 ayoub ayoub 3771 сен  6 18:55 .bashrc
+-rw-r--r--  1 ayoub ayoub  220 сен  6 18:55 .bash_logout
+drwx------  3 ayoub ayoub 4096 сен  6 19:22 .local
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Videos
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Templates
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Public
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Pictures
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Music
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Downloads
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Documents
+drwxr-xr-x  2 ayoub ayoub 4096 сен  6 19:22 Desktop
+drwx------ 10 ayoub ayoub 4096 сен  6 19:54 .cache
+drwx------  2 ayoub ayoub 4096 сен  6 20:04 .ssh
+drwx------  2 ayoub ayoub 4096 сен 10 14:36 .gnupg
+-rw-r--r--  1 ayoub ayoub    0 сен 10 14:44 .sudo_as_admin_successful
+-rw-rw-r--  1 ayoub ayoub   75 сен 10 16:12 .gitconfig
+drwx------ 13 ayoub ayoub 4096 сен 10 16:19 .config
+drwx------  5 ayoub ayoub 4096 сен 10 17:32 snap
+-rw-------  1 ayoub ayoub 2803 сен 10 17:36 .bash_history
+drwxr-x--- 17 ayoub ayoub 4096 сен 10 17:36 .
+drwxrwxr-x  3 ayoub ayoub 4096 сен 10 17:36 operatingSystems
