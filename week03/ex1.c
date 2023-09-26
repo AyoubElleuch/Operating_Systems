@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int const_tri(int* p, int n){
