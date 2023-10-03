@@ -1,0 +1,3 @@
+In the first run where n = 3, the main process create one child process. After 5 seconds each process, the parent and the child, created a new child process therefore we have 4. After 5 seconds, each process creates a child process, and we end up with 8 processes which are killed before the program terminates.
+
+In the second run where n = 5 we have the same thing but with an extra step, so we end up with 16 processes which are killed before the program terminates.
