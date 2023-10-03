@@ -28,7 +28,7 @@ int main(){
 		
 		pid = fork();
 		if(pid < 0){
-			printf("Failed fork");
+			printf("Failed fork\n");
 			return 1;
 		}else if(pid == 0){
 			int result = 0;
