@@ -27,8 +27,10 @@ int main(){
 		end = start + elementPerProcess;
 		
 		pid = fork();
-
-		if(pid == 0){
+		if(pid < 0){
+			printf("Failed fork");
+			return 1;
+		}else if(pid == 0){
 			int result = 0;
 			for(int j = start; j < end; j++){
 				result += u[j] * v[j];
