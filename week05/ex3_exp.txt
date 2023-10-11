@@ -1,0 +1,3 @@
+Ideally, the program runtime should be increasing when the number of used threads is increasing slightly. However, when the number of threads increases substantially we should
+see an increasing runtime. This is due to the mutex locking which forces the threads to wait more time for the unlocking to be done. When our program have a significan amount of
+mutex calls, the runtime slows drastically.
