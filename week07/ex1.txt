@@ -1,0 +1,7 @@
+After running the same input using the three different algorithms, the following throughputs were found:
+First-Fit: 0.014674
+Best-Fit: 0.039457
+Worst-Fit: 0.042861
+
+After looking at these results, we can notice that First-Fit has the lowest throughput. For the Best-Fit and Worst-Fit approaches, the are pretty similar
+especially after running the same code for several times. The average throughputs of Best-Fit and Worst-Fit are almost the same.
