@@ -1,2 +1,2 @@
 The memory usage is increasing by 10MB each second because we are not freeing the memory. When we free the memory after each second, the memory usage
-is fixed to 10MB. However, the si and so are both zeros in the two different cases.
+is fixed to 10MB. However, the si and so are both zeros in the two different cases, this is because the allocated memory is too small so there is no need for memory swapping.
