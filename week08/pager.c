@@ -10,6 +10,13 @@
 #include <signal.h>
 #include <stdbool.h>
 
+/*
+    I know this exerice is not complete and it has many errors, but try to read it and see the logic behind it.
+    I did not have time to neither finish this exerice nor start lab 9. The OS pressure is so overwhelming
+    and I honestly don't have it as I priority anymore.
+
+*/
+
 struct PTE{
     // The page is in the physical memory (RAM)
     bool valid;
