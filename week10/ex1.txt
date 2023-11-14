@@ -1,0 +1,5 @@
+After removing the duplicates of hard links to myfile11.txt, the stat info of the kept hard link shows the inode
+number and the number of hard links associated with the file. The inode is a unique identifier for the file within
+the file system, and the number of hard links indicates how many directory entries refer to the same inode. If there
+were any duplicates of hard links to myfile11.txt, they have been removed, and the stat info reflects the updated
+state of the file.
