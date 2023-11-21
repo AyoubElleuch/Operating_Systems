@@ -1,5 +1,28 @@
 cdrom
 bin
+bash
+cat
+echo
+ls
+lib
+root
+lost+found
+usr
+boot
+sys
+lib64
+..
+.
+tmp
+lib32
+run
+srv
+file1
+file2
+ex1
+
+cdrom
+bin
 sbin
 lib
 dev
@@ -25,3 +48,8 @@ tmp
 lib32
 run
 srv
+
+The difference in the outputs of the program ex1 when run with and without changing the root directory to ./lofsdisk can be described as follows:
+1- Output with changed root directory: When the root directory is changed to ./lofsdisk, the program ex1 lists the contents of the root directory within the context of the mounted LOFS. This means that the program sees the contents of the root directory as if they were located within the ./lofsdisk directory. Any file operations or system calls made by the program will be relative to this new root directory.
+2- Output without changed root directory: When the root directory is not changed, the program ex1 lists the contents of the actual root directory (/) of the system. This means that the program sees the real contents of the root directory and performs file operations or system calls relative to the actual root directory of the system.
+The difference between these two outputs will be the listing of the contents of the root directory from different perspectives: one within the context of the mounted LOFS and the other from the actual root directory of the system.
