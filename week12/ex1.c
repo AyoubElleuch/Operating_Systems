@@ -27,9 +27,7 @@ int main() {
     struct input_event ev;
     int shortcut_pressed;
     int keys_pressed[6];
-    int keys_repeated[6];
     int num_keys_pressed = 0;
-    int num_keys_repeated = 0;
     int i, j;
 
     // Open the keyboard device file
@@ -73,32 +71,12 @@ int main() {
                         break;
                     }
                 }
-                for(i = 0; i < num_keys_repeated; i++){
-                    if(keys_repeated[i] == ev.code){
-                        for(j = i; j<num_keys_repeated-1; j++){
-                            keys_repeated[j] = keys_repeated[j+1];
-                        }
-                        num_keys_repeated--;
-                        break;
-                    }
-                }
                 fprintf(f, "RELEASED 0x%04x (%d)\n", ev.code, ev.code);
             } else if (ev.value == 1) {
                 keys_pressed[num_keys_pressed++] = ev.code;
                 fprintf(f, "PRESSED 0x%04x (%d)\n", ev.code, ev.code);
             } else if(ev.value ==  2){
-                int skip = 0;
-                for(i=0; i<num_keys_pressed; i++){
-                    if(keys_repeated[i] == ev.code){
-                        skip = 1;
-                        break;
-                    }
-                }
-                if(skip == 0) {
-                    fprintf(f, "REPEATED 0x%04x (%d)\n", ev.code, ev.code);
-                    keys_repeated[num_keys_repeated] = ev.code;
-                    num_keys_repeated++;
-                }
+                fprintf(f, "REPEATED 0x%04x (%d)\n", ev.code, ev.code);
             }
 
             // Handle shortcuts
@@ -111,7 +89,6 @@ int main() {
             if(num_keys_pressed == 2 && keys_pressed[0] == 16 && keys_pressed[1] == 48){
                 fprintf(f, "%s\n", shortcut_messages[2]);
             }
-
 
             // Terminate the program on E+X
             if (num_keys_pressed == 2 && keys_pressed[0] == 18 && keys_pressed[1] == 45) {
